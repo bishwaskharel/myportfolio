@@ -1,10 +1,14 @@
 import React from "react";
 import "./app.css";
+// Import Pages
+import AboutUs from "./pages/AboutUs";
 
 function App() {
-  return <div>
-    <h1>Hello Mfs</h1>
-  </div>;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 }
 
 export default App;
