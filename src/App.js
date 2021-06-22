@@ -1,4 +1,6 @@
 import React from "react";
+// Import Router
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 // Global Style
 import GlobalStyle from "./components/GlobalStyle";
@@ -6,14 +8,26 @@ import GlobalStyle from "./components/GlobalStyle";
 // Import Pages
 import Nav from "./components/Nav";
 import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import OurWork from "./pages/OurWork";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <GlobalStyle />
       <Nav />
-      <AboutUs />
-    </div>
+      <Switch>
+        <Route path="/" exact>
+          <AboutUs />
+        </Route>
+        <Route path="/work">
+          <OurWork />
+        </Route>
+        <Route path="/contact">
+          <ContactUs />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
