@@ -41,6 +41,7 @@ const Work = styled.div`
   padding: 5rem 10rem;
   h2 {
     padding: 1rem 0rem;
+    color: white;
   }
 `;
 const Movie = styled.div`
