@@ -9,9 +9,13 @@ const GlobalStyle = createGlobalStyle`
 }
 
 html{
-    font-size: 80%;
-
+   
+    @media (max-width: 1700px){
+        font-size: 60%;
+    }
+    
 }
+
 
 body{
     background-color: #1b1b1b;

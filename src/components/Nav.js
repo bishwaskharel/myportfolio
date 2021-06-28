@@ -46,6 +46,22 @@ const StyledNav = styled.nav`
     text-decoration: none;
     color: white;
   }
+  @media (max-width: 1170px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    h1 {
+      margin: 1rem;
+    }
+    ul {
+      padding: 2rem;
+      justify-content: space-around;
+      width: 100%;
+      li {
+        padding: 0;
+      }
+    }
+  }
 `;
 
 export default Nav;

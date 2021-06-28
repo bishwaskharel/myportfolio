@@ -48,11 +48,18 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: black;
   height: 90vh;
+  @media (max-width: 1170px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
+  @media (max-width: 1170px) {
+    margin-top: 5rem;
+  }
 `;
 
 const Hide = styled.div`
