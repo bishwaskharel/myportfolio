@@ -10,7 +10,7 @@ import ScrollTop from "../components/ScrollTop";
 const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [movies, setMovies] = useState(MovieState);
+  const [movies] = useState(MovieState);
   const [movie, setMovie] = useState(null);
 
   // UseEffect
@@ -65,6 +65,12 @@ const HeadLine = styled.div`
     width: 100%;
     height: 70vh;
     object-fit: cover;
+  }
+  @media (max-width: 1170px) {
+    h2 {
+      text-align: center;
+      padding-bottom: 20rem;
+    }
   }
 `;
 
