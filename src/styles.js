@@ -9,6 +9,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   box-sizing: border-box;
+ 
 `;
 
 export const Description = styled.div`
